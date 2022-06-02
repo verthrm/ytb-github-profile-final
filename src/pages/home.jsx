@@ -19,11 +19,11 @@ export default function Home() {
             <Header username={query.get('username')} />
 
             <UserContainer>
-                {ctx.userData?.name ?
+                {ctx.userData?.icon ?
                     <React.Fragment>
-                        <UserPicture url={ctx.userData?.avatar_url} />
-                        <UserDetails name={ctx.userData?.name} username={ctx.userData?.login} bio={ctx.userData?.bio} />
-                        <UserNumbers repos={ctx.userData?.public_repos} followers={ctx.userData?.followers} following={ctx.userData?.following} />
+                        <UserPicture url={ctx.userData?.ip} />
+                        <UserDetails name={ctx.userData?.ip} username={ctx.userData?.hostname} bio={ctx.userData?.bio} />
+                      
                     </React.Fragment>
                 : undefined }
             </UserContainer>

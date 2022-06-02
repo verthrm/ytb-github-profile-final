@@ -8,9 +8,9 @@ import {
 const UserDetails = props => {
     return (
         <Container>
-            <Name>{props?.name}</Name>
-            <Username>{props?.login}</Username>
-            <Description>{props?.bio}</Description>
+            <Name>{props?.ip}</Name>
+            <Username>{props?.ip}</Username>
+            <Description>{props?.ip}</Description>
         </Container>
     );
 }
